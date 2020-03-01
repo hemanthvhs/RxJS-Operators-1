@@ -1,0 +1,9 @@
+<h3>Employees Age Less Than 30 Years</h3>
+<p *ngFor="let employee of empAgeLessThan30$ | async">
+  {{employee.employee_name +" - "+employee.employee_age}}
+</p>
+
+<h3>Employees Age Greater Than 30 Years</h3>
+<p *ngFor="let employee of empAgeGreaterThan30$ | async"> 
+  {{employee.employee_name +" - "+employee.employee_age}}
+<p>
